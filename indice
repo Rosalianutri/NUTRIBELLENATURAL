@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NutriBellezaNatural — Belleza & Bienestar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Arial", sans-serif;
+      color: #333;
+      background: linear-gradient(to bottom, #ffe4ec, #fff);
+    }
+    header {
+      background-color: #f48fb1;
+      color: white;
+      padding: 20px 0;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+    }
+    .hero .texto {
+      flex: 1;
+      min-width: 300px;
+    }
+    .hero h2 {
+      color: #d81b60;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    .botones a {
+      display: inline-block;
+      margin-right: 15px;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      text-decoration: none;
+    }
+    .btn-principal {
+      background-color: #d81b60;
+      color: white;
+    }
+    .btn-secundario {
+      border: 2px solid #d81b60;
+      color: #d81b60;
+      background-color: transparent;
+    }
+    .botones a:hover {
+      opacity: 0.9;
+    }
+    .hero img {
+      flex: 1;
+      min-width: 300px;
+      max-width: 100%;
+      border-radius: 12px;
+    }
+    .seccion {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      margin-bottom: 40px;
+    }
+    .seccion h3 {
+      color: #d81b60;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .seccion p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .cta-productos a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #d81b60;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    .testimonios {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .testimonio {
+      background-color: #ffe4ec;
+      padding: 30px;
+      border-radius: 12px;
+      font-style: italic;
+    }
+    .footer {
+      background-color: #f48fb1;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .footer p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+    .social-links {
+      margin-top: 15px;
+    }
+    .social-links a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-size: 24px;
+    }
+    .social-links a:hover {
+      opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column-reverse;
+      }
+      .testimonios {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>NutriBellezaNatural</h1>
+      <nav>
+        <a href="#home">Inicio</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="texto">
+      <h2>Beyond Beauty Club</h2>
+      <p>Mucho más que un club de belleza. Nutrición, piel y bienestar con respaldo profesional.</p>
+      <div class="botones">
+        <a href="https://beyondbeautyclub.com/ROSALIA/Enrollment/Index" class="btn-principal">Entrar en el Club</a>
+        <a href="https://beyondbeautyclub.com/ROSALIA/Enrollment/Index" class="btn-secundario">IA – Análisis Gratis</a>
+      </div>
+    </div>
+    <img src="JG.JPG" alt="Imagen de tu referencia" />
+  </section>
+
+  <section class="seccion" id="beneficios">
+    <h3>¿Qué necesita tu piel?</h3>
+    <p>Con la experiencia del Dr. Simon Ourian y la inteligencia artificial analizamos tu piel para recomendarte los mejores productos personalizados. Un diagnóstico gratuito a un clic de distancia.</p>
+    <div class="cta-productos">
+      <a href="https://simonourianmd.com/ROSALIA">Obtén tus productos</a>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <h3>Testimonios</h3>
+    <div class="testimonios">
+      <div class="testimonio">“Con el análisis AI supe exactamente qué tomar para mi piel. Estoy encantada.”<br><strong>— Ana P.</strong></div>
+      <div class="testimonio">“El club me abrió paso a productos que jamás habría conocido. ¡Super recomendables!”<br><strong>— Carmen L.</strong></div>
+    </div>
+  </section>
+
+  <section class="seccion" id="contacto">
+    <h3>Contacto y Asesoría</h3>
+    <p>Déjanos tus datos y te enviamos el test gratis + recomendaciones personalizadas.</p>
+    <form action="mailto:rosaliabbnutri@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="Nombre" placeholder="Nombre" style="width:100%; padding:12px; margin-top:10px; border-radius:6px; border:1px solid #ccc;">
+      <input type="email" name="Correo" placeholder="Correo electrónico" style="width:100%; padding:12px; margin-top:10px; border-radius:6px; border:1px solid #ccc;">
+      <input type="text" name="WhatsApp" placeholder="WhatsApp / Teléfono" style="width:100%; padding:12px; margin-top:10px; border-radius:6px; border:1px solid #ccc;">
+      <textarea name="Mensaje" placeholder="Cuéntanos tu objetivo" rows="4" style="width:100%; padding:12px; margin-top:10px; border-radius:6px; border:1px solid #ccc;"></textarea>
+      <button type="submit" style="background-color:#d81b60; color:white; border:none; padding:14px 28px; margin-top:15px; border-radius:8px; font-size:16px;">Enviar solicitud</button>
+    </form>
+    <div class="social-links">
+      <a href="https://www.instagram.com/nutribellezanatural/" target="_blank">Instagram</a> |
+      <a href="https://www.tiktok.com/@nutribellezanatural?is_from_webapp=1&sender_device=pc" target="_blank">TikTok</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 NutriBellezaNatural — Club & Productos Simon Ourian</p>
+    <p>Los resultados pueden variar. Consulta médica recomendada.</p>
+  </footer>
+
+</body>
+</html>
